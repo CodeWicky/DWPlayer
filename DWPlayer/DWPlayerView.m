@@ -75,16 +75,16 @@
 }
 
 #pragma mark --- setter/getter ---
--(void)setResizeMode:(DWImageVideoResizeMode)resizeMode {
+-(void)setResizeMode:(DWPlayerViewResizeMode)resizeMode {
     if (_resizeMode != resizeMode) {
         _resizeMode = resizeMode;
         switch (resizeMode) {
-            case DWImageVideoResizeModeScaleToFill:
+            case DWPlayerViewResizeModeScaleToFill:
             {
                 self.playerLayer.videoGravity = AVLayerVideoGravityResize;
             }
                 break;
-            case DWImageVideoResizeModeScaleAspectFill:
+            case DWPlayerViewResizeModeScaleAspectFill:
             {
                 self.playerLayer.videoGravity = AVLayerVideoGravityResizeAspectFill;
             }

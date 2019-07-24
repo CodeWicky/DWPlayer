@@ -9,10 +9,10 @@
 #import <UIKit/UIKit.h>
 #import "DWPlayerManager.h"
 
-typedef NS_ENUM(NSUInteger, DWImageVideoResizeMode) {
-    DWImageVideoResizeModeScaleAspectFit,
-    DWImageVideoResizeModeScaleAspectFill,
-    DWImageVideoResizeModeScaleToFill,
+typedef NS_ENUM(NSUInteger, DWPlayerViewResizeMode) {
+    DWPlayerViewResizeModeScaleAspectFit,
+    DWPlayerViewResizeModeScaleAspectFill,
+    DWPlayerViewResizeModeScaleToFill,
 };
 
 @interface DWPlayerView : UIView
@@ -23,7 +23,7 @@ typedef NS_ENUM(NSUInteger, DWImageVideoResizeMode) {
 
 //The resize mode of media.
 ///当前媒体资源的缩放模式
-@property (nonatomic ,assign) DWImageVideoResizeMode resizeMode;
+@property (nonatomic ,assign) DWPlayerViewResizeMode resizeMode;
 
 /**
  Config video to display.
