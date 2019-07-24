@@ -17,10 +17,15 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    self.view.backgroundColor = [UIColor whiteColor];
 }
 
 -(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    
+    if (self.presentedViewController) {
+        return;
+    }
+    
     DWPlayerViewController * player = [DWPlayerViewController new];
     player.view.backgroundColor = [UIColor blackColor];
     NSString * filePath = [[NSBundle mainBundle] pathForResource:@"video4" ofType:@"mp4"];
