@@ -341,7 +341,7 @@ static void *DWPlayerManagerPlayerObservationContext = &DWPlayerManagerPlayerObs
 -(instancetype)init {
     if (self = [super init]) {
         _status = DWPlayerUnknown;
-        _timeIntervalForPlayerTimeObserver = 0.5;
+        _timeIntervalForPlayerTimeObserver = 0;
         _autoPlayAfterReady = NO;
         _rateBeforeSeeking = 0;
         _statusBeforeSeeking = DWPlayerUnknown;
